@@ -1,0 +1,12 @@
+# Project metadata
+nbproject
+.idea
+
+Gemfile.lock
+
+doc/api
+coverage
+pkg
+.yardoc
+.rbx
+*.rbc
