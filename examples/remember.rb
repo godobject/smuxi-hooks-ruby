@@ -18,9 +18,9 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 =end
 
-require 'god_object/smuxi'
+require 'god_object/smuxi_hooks'
 
-class Remember < GodObject::Smuxi::Plugin
+class Remember < GodObject::SmuxiHooks::Plugin
 
   MESSAGE_PATTERN = /remember: (?<data>.+)/
   def message_sent

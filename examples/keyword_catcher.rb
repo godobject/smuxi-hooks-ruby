@@ -18,9 +18,9 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 =end
 
-require 'god_object/smuxi'
+require 'god_object/smuxi_hooks'
 
-class KeywordCatcher < GodObject::Smuxi::Plugin
+class KeywordCatcher < GodObject::SmuxiHooks::Plugin
 
   def message_sent
     if @message.include?('keyword')
