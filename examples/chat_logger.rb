@@ -18,9 +18,9 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 =end
 
-require 'god_object/smuxi'
+require 'god_object/smuxi_hooks'
 
-class ChatLogger < GodObject::Smuxi::Plugin
+class ChatLogger < GodObject::SmuxiHooks::Plugin
 
   LOG_FILE = Pathname.new('/tmp/smuxi_message_log')
 
